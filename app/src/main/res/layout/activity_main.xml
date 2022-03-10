@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#1C5A8C"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="345dp"
+            android:contentDescription="@string/Home_Page"
+            android:padding="2dp"
+            android:src="@drawable/ic_house_24"
+            app:layout_constraintEnd_toEndOf="@+id/toolbarText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/myToolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:text="@string/Home_Page"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <Button
+            android:id="@+id/Educationbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/ocean_blue"
+            android:text="@string/Education_Page"
+            app:layout_constraintBottom_toTopOf="@+id/Copyright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.292"
+            app:layout_constraintStart_toEndOf="@+id/Homebutton" />
+
+        <Button
+            android:id="@+id/Homebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/ocean_blue"
+            android:gravity="center_horizontal|top"
+            android:paddingLeft="32dp"
+            android:text=""
+            app:icon="@drawable/ic_house_24"
+            app:layout_constraintBottom_toTopOf="@+id/Copyright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.265"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="55dp"
+            android:contentDescription="@string/Home_Page"
+            android:foregroundGravity="center"
+            android:src="@drawable/homepage_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+        <TextView
+            android:id="@+id/Copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Copyrights"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+
+        <TextView
+            android:id="@+id/Intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/HomePage_Intro1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/Intro2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+        <TextView
+            android:id="@+id/Intro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/HomePage_Intro2"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

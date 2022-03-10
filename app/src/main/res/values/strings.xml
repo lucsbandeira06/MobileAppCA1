@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">23884ca1</string>
+    <string name="Name">Lucas Bandeira</string>
+    <string name="Home_Page">Home Page</string>
+    <string name="Education_Page">Education</string>
+    <string name="Skills_Page">Skills</string>
+    <string name="Hobbies_Page">Hobbies</string>
+    <string name="Achievements_Page">Achievements</string>
+<!--    Home page strings-->
+    <string name="HomePage_Intro1">Welcome to my first mobile app! My name is Lucas Bandeira. I am 26 years old
+        originally from Brazil. I am also a Computer Science student in Dorset College.
+    </string>
+    <string name="HomePage_Intro2">I hope you enjoy your experience using my first mobile application!</string>
+<!--    Copyrights-->
+    <string name="Copyrights">\u00a9 Copyright Lucas Bandeira 2022, made with Android Studio</string>
+<!--    Education strings-->
+    <string name="Education_Intro">I am a second year Bachelors student of computer science in
+        Dorset College. Throughout the past two years I have seen a fair number of technologies
+        and developing softwares, however I have intentions of
+        specializing myself in front end development in the future.</string>
+
+    <string name="Education_Intro2">Hopefully I will be able to graduate in the first semester of 2023 which
+        makes me course even more exciting, knowing the challanges and
+        opportunities that await for me</string>
+
+    <string name="Extra_Education">Cristo Redentor ULBRA</string>
+    <string name="Edification">Before moving to Ireland,
+        I used to study civil engineering, but after 2 years I realized that I would not enjoy working in the area.
+        Tha was the starting point of moving abroad and then start my studies from the start!</string>
+
+<!--Skills-->
+    <string name="Knowledge">Here are some areas that I have seen so far and some softwares that I know how to use.</string>
+    <string name="Skills1">Kotlin</string>
+    <string name="Skills2">C#</string>
+    <string name="Skills3">JavaScript</string>
+    <string name="Skills4">Java</string>
+    <string name="Skills5">Linux OS</string>
+    <string name="Skills6">AutoCAD</string>
+
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".FifthActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1C5A8C"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="345dp"
+        android:contentDescription="@string/Home_Page"
+        android:padding="2dp"
+        android:src="@drawable/ic_star_half_24"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/myToolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/toolbarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20sp"
+        android:text="@string/Achievements_Page"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/Hobbiesbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/ocean_blue"
+        android:text="@string/Hobbies_Page"
+        app:layout_constraintBottom_toTopOf="@+id/Copyright"
+        app:layout_constraintEnd_toStartOf="@+id/Homebutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Homebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/ocean_blue"
+        android:gravity="center_horizontal|top"
+        android:paddingLeft="32dp"
+        android:text=""
+        app:icon="@drawable/ic_house_24"
+        app:layout_constraintBottom_toTopOf="@+id/Copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Hobbiesbutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/Copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Copyrights"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
