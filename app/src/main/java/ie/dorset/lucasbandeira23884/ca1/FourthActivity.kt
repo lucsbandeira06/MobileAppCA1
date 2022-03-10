@@ -19,12 +19,12 @@ class FourthActivity : AppCompatActivity() {
             startActivity(intent)
         }
         val addButton1 = findViewById<Button>(R.id.Homebutton)
-        addButton.setOnClickListener {
+        addButton1.setOnClickListener {
             val intent = Intent (this, MainActivity::class.java)
             startActivity(intent)
         }
         val addButton2 = findViewById<Button>(R.id.Skillsbutton)
-        addButton.setOnClickListener {
+        addButton2.setOnClickListener {
             val intent = Intent (this, ThirdActivity::class.java)
             startActivity(intent)
         }
